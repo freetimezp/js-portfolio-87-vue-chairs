@@ -26,7 +26,7 @@ const props = defineProps({
 
             <div class="pricing">
                 <RouterLink :to="`/products/${item.id}`" class="add-to-cart">
-                    Leran More
+                    Learn More
                 </RouterLink>
                 <span class="price" :style="[
                     item.discount !== 0 && {

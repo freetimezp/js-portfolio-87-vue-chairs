@@ -1,11 +1,13 @@
 <script setup>
 import Banner from '@/components/Banner.vue';
+import Products from '@/sections/Products.vue';
 
 </script>
 
 
 <template>
     <Banner />
+    <Products />
 </template>
 
 
