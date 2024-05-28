@@ -1,15 +1,12 @@
-<template lang="">
-    <div>
-        home
-    </div>
-</template>
-
-
 <script setup>
+import Banner from '@/components/Banner.vue';
 
 </script>
 
 
-<style scoped>
-    
-</style>
+<template>
+    <Banner />
+</template>
+
+
+<style scoped></style>

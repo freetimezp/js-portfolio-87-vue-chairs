@@ -8,6 +8,10 @@ import SideBar from './components/SideBar.vue';
 <template>
   <SideBar />
   <Header />
+
+  <main id="main">
+    <RouterView />
+  </main>
 </template>
 
 <style scoped></style>
