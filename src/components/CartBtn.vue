@@ -1,4 +1,7 @@
 <script setup>
+import { inject, ref } from 'vue';
+
+const cart = ref(inject("cart"));
 
 </script>
 
@@ -9,7 +12,9 @@
             <i class="bi bi-cart2"></i>
         </RouterLink>
         <RouterLink>
-            <span class="count">3</span>
+            <span class="count">
+                {{ cart.length }}
+            </span>
         </RouterLink>
     </div>
 </template>
