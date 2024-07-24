@@ -8,10 +8,10 @@ const id = route.params.id;
 const item = ref(null);
 
 onMounted(() => {
-    fetch(`https://christmas-04.onrender.com/vueChairs/`)
+    fetch(`https://christmas-04.onrender.com/vueChairs`)
         .then(res => res.json())
         .then(data => (item.value = data[0]["items"][id - 1]))
-        .catch(err => console.log(err.message));
+        .catch(err => console.log("Error here 1", err.message));
 });
 
 defineExpose({ item }); // Expose 'item' to the template

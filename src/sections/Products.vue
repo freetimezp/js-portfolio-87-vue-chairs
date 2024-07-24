@@ -6,10 +6,10 @@ import ItemCard from '@/components/ItemCard.vue';
 const items = ref([]);
 
 onMounted(() => {
-    fetch(`https://christmas-04.onrender.com/vueChairs/`)
+    fetch(`https://christmas-04.onrender.com/vueChairs`)
         .then(res => res.json())
         .then(data => items.value = data[0]['items'])
-        .catch(err => console.log(err.message)); 
+        .catch(err => console.log("Error here 3", err.message)); 
 });
 </script>
 
