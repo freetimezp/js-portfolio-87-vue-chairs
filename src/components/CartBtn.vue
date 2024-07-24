@@ -11,7 +11,7 @@ const cart = ref(inject("cart"));
         <RouterLink to="/cart" class="cart">
             <i class="bi bi-cart2"></i>
         </RouterLink>
-        <RouterLink>
+        <RouterLink to="/cart">
             <span class="count">
                 {{ cart.length > 0 ? cart.length : "0" }}
             </span>
