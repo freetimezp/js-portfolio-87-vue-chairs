@@ -13,7 +13,7 @@ const cart = ref(inject("cart"));
         </RouterLink>
         <RouterLink>
             <span class="count">
-                {{ cart.length }}
+                {{ cart.length > 0 ? cart.length : "0" }}
             </span>
         </RouterLink>
     </div>
