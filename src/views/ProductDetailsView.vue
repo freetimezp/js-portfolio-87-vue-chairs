@@ -8,9 +8,9 @@ const id = route.params.id;
 const item = ref(null);
 
 onMounted(() => {
-    fetch(`http://localhost:4000/items`)
+    fetch(`https://christmas-04.onrender.com/vueChairs/`)
         .then(res => res.json())
-        .then(data => (item.value = data[id - 1]))
+        .then(data => (item.value = data[0]["items"][id - 1]))
         .catch(err => console.log(err.message));
 });
 
